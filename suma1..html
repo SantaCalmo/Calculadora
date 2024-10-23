@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <title>Suma de Dos Números</title>
+    
+    <script>
+        function sumar() {
+            
+            var num1 = parseFloat(document.getElementById("num1").value);
+            var num2 = parseFloat(document.getElementById("num2").value);
+            
+            var suma = num1 + num2;
+            
+            document.getElementById("resultado").textContent = "La suma es: " + suma;
+        }
+    </script>
+</head>
+<style>
+body{
+background-image: url(Imagenes/imagen10.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+background-attachment: fixed;
+
+}
+h1{
+    color: aquamarine;
+
+}
+label{
+    color: blueviolet;
+
+    
+}
+input{
+    color: rgb(228, 130, 10);  
+}
+button{
+    color: black;
+}
+p{
+    color: rgb(209, 209, 3);   
+}
+</style>
+<center>
+    <img src="Imagenes/bob1.jpg" width="200px">
+    <h1>Calculadora de Suma</h1>
+    <p>Introduce dos números para calcular la suma:</p>
+    
+    <label for="num1">Número 1:</label>
+    <input type="number" id="num1" required><br><br>
+    
+    <label for="num2">Número 2:</label>
+    <input type="number" id="num2" required><br><br>
+    
+    <button onclick="sumar()">Calcular Suma</button>
+    
+    <p id="resultado"></p>
+    <img src="Imagenes/imagen 11.jpeg" width="200px">
+    
+</center>;
+</body>
+</html>
